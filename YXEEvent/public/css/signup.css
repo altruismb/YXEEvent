@@ -1,0 +1,157 @@
+/* Prevent scrolling */
+html, body {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+/* Add styling for the brand title */
+.brand-title {
+  font-size: 36px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: black; /* Default color for YXE */
+  text-align: center;
+  text-decoration: none; /* Remove underline */
+}
+
+.brand-title .green {
+  color: #28a745; /* Green color for "EVENTS" */
+}
+
+.brand-title:hover {
+  cursor: pointer; /* Makes the link clickable with pointer cursor */
+}
+
+
+/* Centering the container */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: #f0f2f5;
+}
+
+/* Card container style with flex layout for 2 columns */
+.card {
+  display: flex;
+  background-color: #ffffff;
+  padding: 50px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  width: 90%;
+  height: 500px; /* Fixed height for the card */
+}
+
+/* Image section (left side) */
+.card-image {
+  flex: 1; /* Takes up half the space */
+  height: 100%; /* Ensures the image fits the full height of the card */
+  position: relative;
+  overflow: hidden; /* Prevents the image from overflowing */
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+/* Form section (right side) */
+.card-form {
+  flex: 1; /* Takes up the other half of the card */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center the form vertically */
+  align-items: center; /* Center the form horizontally */
+  padding: 20px;
+}
+
+/* Center form title */
+.form-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Form group styling */
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  width: 100%;
+  max-width: 400px; /* Set a max width for the form elements */
+}
+
+.form-group label {
+  margin-right: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+/* Text box styling */
+.form-group input[type="text"],
+.form-group input[type="password"],
+.form-group input[type="email"] {
+  width: 100%; /* Full width within the form */
+  padding: 15px; /* Increase padding for a longer appearance */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+  height: 45px; /* Increase the height of the input fields */
+}
+
+/* Focus styling for inputs */
+.form-group input[type="text"]:focus,
+.form-group input[type="password"]:focus,
+.form-group input[type="email"]:focus {
+  outline: none;
+  border-color: #4CAF50; /* Green border on focus */
+}
+
+/* Centered button with form group */
+.form-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.form-submit {
+  width: 60%; /* Smaller width */
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-submit:hover {
+  background-color: #218838;
+}
+
+/* Centered "Create an account" link */
+.signup-image-link {
+  display: block;
+  margin-top: 10px;
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 14px;
+  text-align: center;
+}
+
+.signup-image-link:hover {
+  text-decoration: underline;
+}
